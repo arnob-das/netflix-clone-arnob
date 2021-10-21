@@ -1,16 +1,31 @@
-.row_posters{
-    display: flex; 
+.row_posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
 }
 
-.row_poster{
-    object-fit: contain;
-    width: 100%;
-    max-width: 100px;
-    margin-right: 10px;
-    transition: transform 450ms;
+.row_posters::-webkit-scrollbar {
+  display: none;
 }
 
-.row_poster:hover{
-    transform: scale(1.08);
+.row_poster {
+  object-fit: contain;
+  width: 100%;
+  max-width: 100px;  
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+}
+
+.row_posterLare{
+    max-height: 250px;
+}
+
+.row_posterLare:hover{
+    transform: scale(1.09);
     opacity: 1;
 }
