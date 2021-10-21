@@ -30,6 +30,6 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
       </div>
     </div>
   );
-};
+}; 
 
 export default Row;
