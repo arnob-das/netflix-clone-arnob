@@ -6,8 +6,6 @@ import "./Banner.css";
 const Banner = () => {
     const [movie, setMovie] = useState([]);
 
-    const img_BaseUrl = "https://image.tmdb.org/t/p/original/";
-
     useEffect(() => {
         async function fetchData() {
             const request = await axios.get(
